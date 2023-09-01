@@ -85,11 +85,25 @@ WSGI_APPLICATION = 'shopit.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 #database_url = os.environ.get("DATABASE_URL")
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+'''
+
+
+DATABASES = {
+    'default': {
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'KoKjK4m7uk1p0f0Nh6Ln',
+        'HOST': 'containers-us-west-51.railway.app',
+        'PORT': '6199',
     }
 }
 
